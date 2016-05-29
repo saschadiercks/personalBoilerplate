@@ -1,6 +1,6 @@
 # personalboilerplate
 Minimal Boilerplate for personal use to jumpstart local Webdevelopment.
-Just run "vagrant up" and get started!
+Just run "vagrant up" and start coding!
 
 ## Specs
 - vagrant
