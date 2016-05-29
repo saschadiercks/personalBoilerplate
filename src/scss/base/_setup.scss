@@ -14,11 +14,11 @@
 		$font-line-height-base: 1.4em;
 
 			// font-style, font-variant, font-weight, font-size/line-height, font-family
-			$font-base: normal normal normal $font-size-base/$font-line-height-base $font-family-base;
-			$font-decorative: normal normal normal $font-size-base/$font-line-height-base $font-family-decorative;
+			$font-base: normal normal normal #{$font-size-base}/#{$font-line-height-base} $font-family-base;
+			$font-decorative: normal normal normal #{$font-size-base}/#{$font-line-height-base} $font-family-decorative;
 
 			// other Font-Sizes
-			$footer-font-size: 12px;
+			$footer-font-size: inherit;
 
 	//------- Colors -------
 		// Colors
@@ -46,6 +46,11 @@
 			$base-box-shadow-blur: 8px;
 			$base-box-shadow: 0 $base-box-shadow-offset $base-box-shadow-blur $base-box-shadow-color;
 
+			$base-input-box-shadow-color: $base-box-shadow-color;
+			$base-input-box-shadow-offset: $base-box-shadow-offset;
+			$base-input-box-shadow-blur: $base-box-shadow-blur;
+			$base-input-box-shadow: inset 0 $base-input-box-shadow-offset $base-input-box-shadow-blur $base-input-box-shadow-color;
+
 	//------- Measurements -------
 		// Margins, Paddings
 		$base-padding: 6px;
@@ -67,5 +72,5 @@
 	$content-main-width: 100% - $nav-main-width;
 	$content-height-max: 600px;
 	$content-width-max: 960px;
-	
+
 //------- /Page-Setup

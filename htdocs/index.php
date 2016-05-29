@@ -17,6 +17,15 @@
 			<?php require_once 'modules/navigation/nav-main.php'; ?>
 
 			<main role="content">
+				<form action="#" method="get" role="form">
+					<div>
+						<label for="dummy-input">Label for dummy-input</label>
+						<input type="text" placeholder="dummy-input" id="dummy-input" />
+					</div>
+					<div class="action">
+						<button type="submit">Submit form</button>
+					</div>
+				</form>
 			</main>
 		</div>
 
