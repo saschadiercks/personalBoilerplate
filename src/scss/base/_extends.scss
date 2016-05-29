@@ -1,0 +1,39 @@
+%align-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+%align-centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+%arrow-top {
+	&:before {
+		content: "";
+		position: absolute;
+		top: -#{$base-padding};
+		left: $base-padding*2;
+		border-bottom: $base-padding solid $overlay-bg;
+		border-left: $base-padding solid transparent;
+		border-right: $base-padding solid transparent;
+	}
+}
+
+%clearfix {
+	&:after {
+	  content:"";
+	  display:table;
+	  clear:both;
+	}
+}
+
+%ul-reset {
+	list-style-type: none;
+	padding-left: 0;
+}
+

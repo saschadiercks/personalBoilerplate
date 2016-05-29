@@ -1,0 +1,23 @@
+// ------------ Framework ------------
+
+// Setup-Dateien
+@import 'base/_setup';
+
+// Standard und Reset fuer die Seite
+@import 'base/_extends';
+@import 'base/_reset';
+@import 'base/_reset-desktop';
+@import 'base/_typo';
+
+// Das Grundlayout der Seite
+@import 'framework/_header';
+@import 'framework/_logo';
+@import 'framework/_page';
+@import 'framework/_footer';
+
+
+// Modules
+@import 'modules/navigation/_nav-main'; 
+
+
+// ------------ Desktop-Layout ------------

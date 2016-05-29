@@ -1,0 +1,19 @@
+body {
+	//background-color: $body-bg;
+	color: $body-color;
+	font: $font-base;
+}
+
+h1, .h1 {
+	border-bottom: 1px solid $color-dark;
+	font-family: $font-decorative;
+	font-weight: normal;
+	padding-bottom: $base-padding;
+}
+
+a {
+	color: $base-link-color;
+	&:hover { color: $base-link-color-active; }
+}
+
+nav a {	text-decoration: none; }
