@@ -17,7 +17,8 @@ Currently using Version 5
 
 ### SASS
 Currently using Codekit (which is great, but not openSource) to compile SASS-Files.
+normalize.scss is used to, eh, normalize, the CSS. (https://github.com/necolas/normalize.css)
 TODO: use gulp or grunt
 
 ### jquery
-Get jQuery from Google, because for local development it's the easiest way to get started. The file get's loaded in modules/framework/javascript.php. 
+Get jQuery from Google, because for local development it's the easiest way to get started. The file get's loaded in modules/framework/javascript.php.
