@@ -1,53 +1,65 @@
-//------- Defaults
+//------------------------
+//------- Defaults -------
+//------------------------
 
-// Webfont-Integration
-@import url(__Input Google-Font__);
+	//------- Fonts -------
 
-//Fonts
-$font-family-base: Verdana, Arial, Helvetica, sans-serif;
-$font-family-decorative: 'Pinyon Script', cursive;
+		// Webfont-Integration
+		@import url(__Input Google-Font__);
 
-	//font-style, font-variant, font-weight, font-size/line-height, font-family
-	$font-base: normal normal normal 0.875em/1.4em $font-family-base;
-	$font-decorative: normal normal normal 1em/1.4em $font-family-decorative;
+		//Font defaults
+		$font-family-base: sans-serif;
+		$font-family-decorative: cursive;
+		$font-size-base: 14px;
+		$font-line-height-base: 1.4em;
 
-	// Font-Sizes
-	$footer-font-size: 12px;
+			// font-style, font-variant, font-weight, font-size/line-height, font-family
+			$font-base: normal normal normal $font-size-base/$font-line-height-base $font-family-base;
+			$font-decorative: normal normal normal $font-size-base/$font-line-height-base $font-family-decorative;
 
-	// Colors
-	$body-bg: #fff;
-	$body-color: #666;
-	$color-light: $body-bg;
-	$color-dark: $body-color;
-	$color-primary: #d00;
-	$color-secondayry: #d00;
+			// other Font-Sizes
+			$footer-font-size: 12px;
 
-		// Links
-		$base-link-color: $color-dark;
-		$base-link-color-active: $color-primary;
+	//------- Colors -------
+		// Colors
+		$body-bg: #fff;
+		$body-color: #666;
+		$color-light: $body-bg;
+		$color-dark: $body-color;
+		$color-primary: #d00;
+		$color-secondayry: #d00;
 
-		// Borders
-		$base-border-color: #ddd;
-		$base-border: 1px solid $base-border-color;
+			// Links
+			$base-link-color: $color-dark;
+			$base-link-color-active: $color-primary;
 
-		// Shadows
-		$base-box-shadow-color: rgba(0,0,0,.2);
-		$base-box-shadow-offset: 2px;
-		$base-box-shadow-blur: 8px;
-		$base-box-shadow: 0 $base-box-shadow-offset $base-box-shadow-blur $base-box-shadow-color;
+			// Borders
+			$base-border-color: #ddd;
+			$base-border: 1px solid $base-border-color;
 
-		// Overlays
-		$overlay-bg: #fff;
+			// Overlays
+			$overlay-bg: #fff;
 
-	// Margins, Paddings
-	$base-padding: 6px;
-	$base-gutter: $base-padding*2;
-	$icon-gutter: $base-padding;
+			// Shadows
+			$base-box-shadow-color: rgba(0,0,0,.2);
+			$base-box-shadow-offset: 2px;
+			$base-box-shadow-blur: 8px;
+			$base-box-shadow: 0 $base-box-shadow-offset $base-box-shadow-blur $base-box-shadow-color;
 
-	// Radius
-	$base-radius: 2px;
+	//------- Measurements -------
+		// Margins, Paddings
+		$base-padding: 6px;
+		$base-gutter: $base-padding*2;
+		$icon-gutter: $base-padding;
 
-//------- Page-Setup
+		// Radius
+		$base-radius: 2px;
+
+//------- /defaults -------
+
+//------------------------
+//------- Page-Setup -----
+//------------------------
 	// Navigation
 	$nav-main-width: 20%;
 
@@ -55,3 +67,5 @@ $font-family-decorative: 'Pinyon Script', cursive;
 	$content-main-width: 100% - $nav-main-width;
 	$content-height-max: 600px;
 	$content-width-max: 960px;
+	
+//------- /Page-Setup
