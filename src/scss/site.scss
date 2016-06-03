@@ -9,6 +9,9 @@
 @import 'base/_reset-desktop';
 @import 'base/_typo';
 
+// Seite zentrieren? (unkommentieren, wenn beötigt)
+// @import 'base/_centered';
+
 // Das Grundlayout der Seite
 @import 'framework/_header';
 @import 'framework/_logo';

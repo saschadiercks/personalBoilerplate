@@ -1,0 +1,10 @@
+// Center Cross-Browser
+html {
+	display: table;
+	width: 100%;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
