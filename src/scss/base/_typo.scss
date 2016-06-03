@@ -4,6 +4,8 @@ body {
 	font: $font-base;
 }
 
+textarea { font: $font-base; }
+
 h1, .h1 {
 	font-family: $font-decorative;
 	font-weight: normal;
