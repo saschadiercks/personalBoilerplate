@@ -1,23 +1,36 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    }
-  });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+	// SASS
+	require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+	grunt.initConfig({
+		sass: {
+			options: {
+				sourceMap: true,
+				outputStyle: 'compressed'
+			},
+			dist: {
+				files: {
+					'htdocs/assets/css/site.min.css': 'src/scss/site.scss',
+					'htdocs/assets/css/mobile.min.css': 'src/scss/mobile.scss'
+				}
+			}
+		}
+	});
+	grunt.registerTask('default', ['sass']);
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
 
+	// Watch
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.initConfig({
+		watch: {
+		  src: {
+		    files: ['**/*.scss'],
+		    tasks: ['default'],
+		    options: {
+		      event: ['changed', 'added', 'deleted'],
+		    },
+		  },
+		},
+	});
 };

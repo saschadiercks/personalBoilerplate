@@ -5,7 +5,9 @@
   "main": "Gruntfile.js",
   "dependencies": {},
   "devDependencies": {
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "load-grunt-tasks": "^3.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
