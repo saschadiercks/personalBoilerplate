@@ -1,20 +1,19 @@
 // ------------ Framework ------------
 
-// Setup-Dateien
+// Core-Settings
 @import 'base/_setup';
 
-// Standard und Reset fuer die Seite
+// Core-resets
 @import 'base/_extends';
 @import 'base/_reset';
 @import 'base/_reset-desktop';
 @import 'base/_typo';
 
-// Das Grundlayout der Seite
+// Base-Layout
 @import 'framework/_header';
 @import 'framework/_logo';
 @import 'framework/_page';
 @import 'framework/_footer';
-
 
 // Modules
 @import 'modules/forms/_forms';

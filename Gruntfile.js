@@ -1,9 +1,12 @@
 module.exports = function(grunt) {
 
-
-	// SASS
+	// Dependencies
 	require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+
+	// Initializing configuration objects
 	grunt.initConfig({
+
+		// SASS
 		sass: {
 			options: {
 				sourceMap: true,
@@ -15,22 +18,23 @@ module.exports = function(grunt) {
 					'htdocs/assets/css/mobile.min.css': 'src/scss/mobile.scss'
 				}
 			}
-		}
-	});
-	grunt.registerTask('default', ['sass']);
+		},
 
-
-	// Watch
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.initConfig({
+		// Watch
 		watch: {
-		  src: {
-		    files: ['**/*.scss'],
-		    tasks: ['default'],
-		    options: {
-		      event: ['changed', 'added', 'deleted'],
-		    },
-		  },
+			src: {
+				files: ['**/*.scss'],
+				tasks: ['default'],
+				options: {
+					event: ['changed', 'added', 'deleted'],
+				}
+			}
 		},
 	});
+
+	// Load packages
+	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	// Register Tasks
+	grunt.registerTask('default', ['sass']);
 };

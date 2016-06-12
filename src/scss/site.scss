@@ -1,23 +1,22 @@
 // ------------ Framework ------------
 
-// Setup-Dateien
+// Core-Settings
 @import 'base/_setup';
 
-// Standard und Reset fuer die Seite
+// Core-resets
 @import 'base/_extends';
 @import 'base/_reset';
 @import 'base/_reset-desktop';
 @import 'base/_typo';
 
-// Seite zentrieren? (unkommentieren, wenn beötigt)
+// center layout? (uncomment if you want to center your layout vertically & horizontally)
 // @import 'base/_centered';
 
-// Das Grundlayout der Seite
+// Base-Layout
 @import 'framework/_header';
 @import 'framework/_logo';
 @import 'framework/_page';
 @import 'framework/_footer';
-
 
 // Modules
 @import 'modules/forms/_forms';
