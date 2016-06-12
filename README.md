@@ -34,8 +34,9 @@ Get jQuery from Google, because for local development it's the easiest way to ge
 2. Enter `vagrant up`
 3. Wait a while until all components are loade an the box is running. (The first start can take a while)
 4. Your machine is running and can be accessed in your browser via `http://127.0.0.1:8080/`. If you see an Ubuntu-Startpage, just delete the index.html
-5. to compile SASS/CSS on the fly, just enter `grunt watch` in your terminal now
-6. start buildung
+5. Make sure, you have node.js installed on your computer (https://nodejs.org/en/) then you need to run the following command once to get started with grunt `npm install -g grunt-cli`
+6. to compile SASS/CSS on the fly, just enter `grunt watch` in your terminal now
+7. start buildung
 
 ## TODO
 - prefer .php-files instead of .html-files
