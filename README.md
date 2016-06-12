@@ -13,6 +13,7 @@ Just deploy or upload everything under "/htdocs" and keep all files in "./" and 
 - php
 - sass
 - jquery
+- compiling using grunt
 
 ### Vagrant
 A minimal Box to start a local PHP-Environment with ease. Almost a clone of https://github.com/sapienza/vagrant-php-box. Just one small modification.
@@ -22,9 +23,19 @@ Remember: You need to install "Vagrant" (https://www.vagrantup.com/) and Virtual
 Currently using Version 5
 
 ### SASS
-Currently using Codekit (which is great, but not openSource) to compile SASS-Files.
+SASS is compiled using grunt. (http://gruntjs.com/)
 normalize.scss is used to, eh, normalize, the CSS. (https://github.com/necolas/normalize.css)
-TODO: use gulp or grunt
 
 ### jquery
 Get jQuery from Google, because for local development it's the easiest way to get started. The file get's loaded in modules/framework/javascript.php, so you can change this here.
+
+## How to get started
+1. Create a new folder/project and open up your terminal.
+2. Enter `vagrant up`
+3. Wait a while until all components are loade an the box is running. (The first start can take a while)
+4. Your machine is running and can be accessed in your browser via `http://127.0.0.1:8080/`. If you see an Ubuntu-Startpage, just delete the index.html
+5. to compile SASS/CSS on the fly, just enter `grunt watch` in your terminal now
+6. start buildung
+
+## TODO
+- prefer .php-files instead of .html-files
