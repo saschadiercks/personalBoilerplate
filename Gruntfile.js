@@ -20,6 +20,22 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// PostCSS
+		postcss: {
+			options: {
+				map: false,
+
+				processors: [
+					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+					require('cssnano')() // minify the result
+				]
+			},
+			dist: {
+				src: 'css/*.min.css'
+			}
+		},
+
+
 		// Watch
 		watch: {
 			src: {
@@ -34,7 +50,8 @@ module.exports = function(grunt) {
 
 	// Load packages
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-postcss');
 
 	// Register Tasks
-	grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['sass','postcss']);
 };
