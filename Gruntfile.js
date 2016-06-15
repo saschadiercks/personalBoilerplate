@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 
 	// Initializing configuration objects
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
 
 		// SASS
 		sass: {
@@ -26,12 +27,12 @@ module.exports = function(grunt) {
 				map: false,
 
 				processors: [
-					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+					require('autoprefixer')({browsers: ['last 2 versions', '>5%']}), // add vendor prefixes
 					require('cssnano')() // minify the result
 				]
 			},
 			dist: {
-				src: 'css/*.min.css'
+				src: 'htdocs/assets/css/*.min.css'
 			}
 		},
 
