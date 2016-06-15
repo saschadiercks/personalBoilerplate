@@ -18,6 +18,7 @@ Just deploy or upload everything under "/htdocs" and keep all files in "./" and 
 ### Vagrant
 A minimal Box to start a local PHP-Environment with ease. Almost a clone of https://github.com/sapienza/vagrant-php-box. Just one small modification.
 Remember: You need to install "Vagrant" (https://www.vagrantup.com/) and Virtualbox (https://www.virtualbox.org/) first.
+Hint: The Box displays a message after the Box is up an running. You can use this message to set a trigger in some Tools (e.g. iTerm2) and get notified after the box is running.
 
 ### PHP
 Currently using Version 5
