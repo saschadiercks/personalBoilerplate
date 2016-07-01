@@ -1,4 +1,7 @@
 # personalboilerplate
+if your'e interested in using docker in favor of vagrant, please visit: https://github.com/saschadiercks/dockerBox
+
+
 Minimal Boilerplate for personal use to jumpstart local Webdevelopment.
 Just run "vagrant up" and start coding!
 
