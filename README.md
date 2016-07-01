@@ -36,8 +36,8 @@ Just deploy or upload everything under "/htdocs" and keep all files in "./" and 
 SASS is compiled using grunt. (http://gruntjs.com/)
 1. Make sure, you have node.js installed on your computer (https://nodejs.org/en/)
 2. run `npm install -g grunt-cli` to install grunt
-1. run `npm install` to use grunt in your project
-2. run `grunt watch` to compile SASS on the fly
+3. run `npm install` to use grunt in your project
+4. run `grunt watch` to compile SASS on the fly
 
 ### jquery
 Get jQuery from Google, because for local development it's the easiest way to get started. The file get's loaded in modules/framework/javascript.php, so you can change this here.
